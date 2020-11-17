@@ -13,25 +13,27 @@
 </head>
 
 <body>
-  <header class="header content-width">
-    <h1>Ryohei's Portfolio</h1>
-    <p class="header__sub">My background and experience</p>
-    <nav class="header__nav">
-      <ul class="header__ul">
-        <a href="#about-page">
-          <li class="header__li">About</li>
-        </a>
-        <a href="#skills-page">
-          <li class="header__li">Skills</li>
-        </a>
-        <a href="#works-page">
-          <li class="header__li">Works</li>
-        </a>
-        <a href="#contact-page">
-          <li class="header__li">Contact</li>
-        </a>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__inner">
+      <h1>Ryohei's Portfolio</h1>
+      <p class="header__sub">My background and experience</p>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <a href="#about-page">
+            <li class="header__li">About</li>
+          </a>
+          <a href="#skills-page">
+            <li class="header__li">Skills</li>
+          </a>
+          <a href="#works-page">
+            <li class="header__li">Works</li>
+          </a>
+          <a href="#contact-page">
+            <li class="header__li">Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
   </header>
   <div class="nav-trigger"></div>
   <div class="mobile-header">
@@ -58,9 +60,9 @@
   <div class="content">
     <article>
       <div class="wrapper">
-        <section id="about-page" class="about content-width pb-lg">
+        <section id="about-page" class="about content-width pt-lg pb-lg">
           <h2 class="main-title">About Me</h2>
-          <p style="text-align: center; font-size: 12px; margin-bottom: 20px; color: yellow;">※ 一部、個人情報を非公開にしております。</p>
+          <p style="text-align: center; font-size: 12px; margin-bottom: 20px; color: red;">※ 一部、個人情報を非公開にしております。</p>
           <h3 class="sub-title">Information</h3>
           <div class="about__inner">
             <div class="about__info mb-sm">
@@ -79,13 +81,13 @@
             <div class="about__educational mb-sm">
               <ul class="about__ul">
                 <li>
-                  <span class="datetime">平成22年04月</span>京都市立某高等学校　入学</li>
+                  <span class="datetime">平成22年04月</span>京都市立伏見工業高等学校　システム工学科　入学</li>
                 <li>
-                  <span class="datetime">平成25年03月</span>京都市立某高等学校　卒業</li>
+                  <span class="datetime">平成25年03月</span>京都市立伏見工業高等学校　システム工学科　卒業</li>
                 <li>
-                  <span class="datetime">平成25年04月</span>大阪某大学　入学</li>
+                  <span class="datetime">平成25年04月</span>大阪工業大学　情報科学部　情報メディア学科　入学</li>
                 <li>
-                  <span class="datetime">平成29年03月</span>大阪某大学　卒業</li>
+                  <span class="datetime">平成29年03月</span>大阪工業大学　情報科学部　情報メディア学科　卒業</li>
               </ul>
             </div>
             <h3 class="sub-title">Work</h3>
@@ -102,13 +104,13 @@
       </div>
       <!-- ./wrapper -->
       <div class="wrapper">
-        <section id="skills-page" class="skills content-width pb-lg">
+        <section id="skills-page" class="skills content-width pt-lg pb-lg">
           <h2 class="main-title">Skills</h2>
           <div class="skills__front-end">
             <h3 class="sub-title">FrontEnd</h3>
             <div class="skills__inner">
               <div class="skills__item">
-                <p class="skills__title">HTML5</p>
+                <h4 class="skills__title">HTML5</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -116,11 +118,12 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                 </div>
-                <p class="skills__comment">W3Cに準拠したコーディング</p>
+                <p class="skills__comment">HTML5プロフェッショナル(レベル1)の認定者です。
+                </p>
               </div>
               <!-- ./skills__item -->
               <div class="skills__item">
-                <p class="skills__title">CSS3</p>
+                <h4 class="skills__title">CSS3</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -128,7 +131,9 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                 </div>
-                <p class="skills__comment">FlexBox、GridLayout</p>
+                <p class="skills__comment">
+                  FlexBox、GridLayoutを使ったレスポンシブに対応したサイトのデザイン。
+                </p>
               </div>
               <!-- ./skills__item -->
               <div class="skills__item">
@@ -140,7 +145,10 @@
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </div>
-                <p class="skills__comment">オブジェクト指向での開発、ライブラリの活用</p>
+                <p class="skills__comment">
+                  ES6に準じたプログラミング。<br>
+                  クラスを用いたオブジェクト指向での開発。
+                </p>
               </div>
               <!-- ./skills__item -->
             </div>
@@ -151,7 +159,7 @@
             <h3 class="sub-title">Application</h3>
             <div class="skills__inner">
               <div class="skills__item">
-                <div class="skills__title">Dreamweaver</div>
+                <h4 class="skills__title">Dreamweaver</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -159,11 +167,12 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                 </div>
-                <p class="skills__comment">コーディング、ファイル構成、FTPの操作</p>
+                <p class="skills__comment">コーディング、ファイル構成、FTPの操作。
+                </p>
               </div>
               <!-- /.skills__item -->
               <div class="skills__item">
-                <div class="skills__title">PhotoShop</div>
+                <h4 class="skills__title">PhotoShop</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -171,11 +180,13 @@
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
                 </div>
-                <p class="skills__comment">簡単なレタッチ、トリミングなどができます。</p>
+                <p class="skills__comment">
+                  リサイズやトリミングなど基本的な操作は可能です。
+                </p>
               </div>
               <!-- /.skills__item -->
               <div class="skills__item">
-                <div class="skills__title">Illustrator</div>
+                <h4 class="skills__title">Illustrator</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -193,8 +204,8 @@
           <div class="skills__Other">
             <h3 class="sub-title">Other</h3>
             <div class="skills__inner">
-              <div class="skills__item">
-                <div class="skills__title">OfficeSoft</div>
+              <div class="skills__item last-row-item">
+                <h4 class="skills__title">OfficeSoft</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -206,8 +217,8 @@
                   <br>Word / Excel / PPT問題なく使えます。</p>
               </div>
               <!-- /.skills__item -->
-              <div class="skills__item">
-                <div class="skills__title">C#.NET / VC++</div>
+              <div class="skills__item last-row-item">
+                <h4 class="skills__title">C#.NET / VC++</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -219,8 +230,8 @@
                   <br>Windowsアプリケーションの開発経験があります。</p>
               </div>
               <!-- /.skills__item -->
-              <div class="skills__item">
-                <div class="skills__title">SQL</div>
+              <div class="skills__item last-row-item">
+                <h4 class="skills__title">SQL</h4>
                 <div class="skills__level">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -240,12 +251,12 @@
       </div>
       <!-- /.wrapper -->
       <div class="wrapper">
-        <section id="works-page" class="works content-width pb-lg">
+        <section id="works-page" class="works content-width pt-lg pb-lg">
           <h2 class="main-title">Works</h2>
           <h3 class="sub-title">制作事例の一部を紹介します。</h3>
-          <p style="text-align: center; color: yellow;">紙面媒体でのポートフォリオも作成しております。合わせてご覧いただければ幸いです。</p>
+          <p style="text-align: center;">紙面媒体でのポートフォリオも作成しております。合わせてご覧いただければ幸いです。</p>
           <a href="./pdf/portfolio.pdf" target="_blank" style="text-decoration: underline !important;">
-            <p style="text-align: center; margin-bottom: 20px; color: yellow;">紙のポートフォリオを開く（PDFを開きます。）</p>
+            <p style="text-align: center; margin-bottom: 20px; color: red;">紙のポートフォリオを開く（PDFを開きます。）</p>
           </a>
           <div class="works__inner">
             <div class="works__item">
@@ -437,7 +448,7 @@
       </div>
       <!-- /.wrapper -->
       <div class="wrapper">
-        <section id="contact-page" class="contact content-width pb-lg">
+        <section id="contact-page" class="contact content-width pt-lg pb-lg">
           <h2 class="main-title">Contact</h2>
           <h3 class="sub-title">ご連絡は以下より、お願いいたします。</h3>
           <div class="contact__inner">
