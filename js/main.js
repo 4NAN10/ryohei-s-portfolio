@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 class Main {
     constructor() {
-        this.mobile_header = document.querySelector('.mobile-header');
+        this.mobile_header = document.querySelector('.header-bar');
         this._observers = [];
         this._init();
     }
@@ -18,6 +18,7 @@ class Main {
     }
 
     _init() {
+        new MobileMenu();
         Pace.on('done', this._paceDone.bind(this));
     }
 
