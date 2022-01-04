@@ -26,6 +26,23 @@ img {
   vertical-align: bottom;
 }
 
+a[target="_blank"] {
+  position: relative;
+}
+a[target="_blank"]:hover {
+  opacity: 0.8;
+}
+a[target="_blank"]::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f35d";
+  position: absolute;
+  top: 50%;
+  right: -1.5em;
+  transform: translateY(-50%);
+
+}
+
 .font-sm, body, .skills__comment, .works dd {
   font-size: 16px;
 }
@@ -44,10 +61,6 @@ img {
 
 .mb-lg {
   margin-bottom: 150px !important;
-}
-
-.mb-sm, .sub-title {
-  margin-bottom: 16px !important;
 }
 
 .pb-sm {
@@ -239,6 +252,7 @@ nav a {
 .sub-title {
   letter-spacing: 2px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .wrapper:nth-last-child(even) {
@@ -246,7 +260,15 @@ nav a {
   color: #000000;
 }
 
-.about__info {
+.about__inner {
+  width: 50%;
+  margin: auto;
+}
+.about__inner > div {
+  margin-bottom: 30px;
+}
+
+/* .about__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,12 +278,17 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
+} */
 
-.about__educational, .about__work {
+/* .about__educational, .about__work {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
+} */
+
+ul.discList {
+  list-style: disc;
+  padding-left: 1em;
 }
 
 .about__ul {
@@ -324,6 +351,18 @@ nav a {
   margin-bottom: 10px;
 }
 
+.levelContainer {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+progress {
+  height: 1.5em;
+  margin-left: 0.5em;
+}
+
 .last-row-item {
   margin-bottom: 0;
 }
@@ -339,6 +378,11 @@ summary {
   margin: -.5em -.5em 0;
   padding: .5em;
   cursor: pointer;
+}
+
+.works__inner {
+  width: 100%;
+  text-align: center;
 }
 
 .works__item {
@@ -429,11 +473,6 @@ summary {
   outline: none;
 }
 
-.works a {
-  color: #ffffff;
-  text-decoration: none !important;
-}
-
 .ai {
   width: 100%;
   height: 100%;
@@ -441,6 +480,12 @@ summary {
 
 .logo-link {
   color: yellow !important;
+}
+
+.jirei {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
 }
 
 .contact__inner {
@@ -560,6 +605,9 @@ Stylesheet: 600px以下のタブレットやモニタで適用
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .about__inner {
+    width: 100%;
   }
   .skills__inner {
     -webkit-box-orient: vertical;

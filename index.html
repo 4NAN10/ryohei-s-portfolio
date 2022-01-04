@@ -73,7 +73,7 @@
               <h2 class="main-title">About Me</h2>
               <h3 class="sub-title">Information</h3>
               <div class="about__inner">
-                <div class="about__info mb-sm">
+                <div class="about__info">
                   <!-- <div class="about__img">
                     <img src="img/kao.png" alt="">
                   </div> -->
@@ -85,8 +85,8 @@
                   </ul>
                 </div>
                 <h3 class="sub-title">Educational</h3>
-                <div class="about__educational mb-sm">
-                  <ul class="about__ul">
+                <div class="about__educational">
+                  <ul class="about__ul discList">
                     <li>工業高校卒業(2014年)</li>
                     <li>理系四大卒業(2017年)</li>
                     <li>公共職業訓練Web科修了(2020年)</li>
@@ -94,11 +94,19 @@
                 </div>
                 <h3 class="sub-title">License</h3>
                 <div class="about__work">
-                  <ul class="about__ul">
+                  <ul class="about__ul discList">
                     <li>基本情報技術者</li>
                     <li>HTML5プロフェッショナル Level1認定者</li>
                     <li>甲種危険物取扱者</li>
                   </ul>
+                </div>
+                <h3 class="sub-title">PR</h3>
+                <div class="about__pr">
+                  <p class="pr">
+                    SE職を3年間勤めた後に、職業訓練校を経てWebコーダーとして従事しております。<br>
+                    デザインはできない分、エンジニア時代に培った技術力やプロダクトに対する熱意を持ってWeb制作に携わっています。<br>
+                    技術的なアドバイスやクライアントの更新・運用面を考えた提案するなどコーディング業務だけでなく、積極的にプロジェクトへ参画していくことを心がけています。
+                  </p>
                 </div>
               </div>
             </section>
@@ -112,43 +120,34 @@
                 <div class="skills__inner">
                   <div class="skills__item">
                     <h4 class="skills__title">HTML5</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-html">Level:</label>
+                      <progress id="level-html" max="100" value="80"></progress>
                     </div>
-                    <p class="skills__comment">HTML5プロフェッショナル(レベル1)の認定者です。
+                    <p class="skills__comment">実務経験1年以上<br>HTML5プロフェッショナル(レベル1)の認定者です。
                     </p>
                   </div>
                   <!-- ./skills__item -->
                   <div class="skills__item">
                     <h4 class="skills__title">CSS3</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-css">Level:</label>
+                      <progress id="level-css" max="100" value="70"></progress>
                     </div>
                     <p class="skills__comment">
-                      FlexBox、GridLayoutを使ったレスポンシブに対応したサイトのデザイン。
+                      実務経験1年以上<br>FlexBox、GridLayoutを使ったレスポンシブデザインを心がけています。Sass(SCSS)でコーディングしています。
                     </p>
                   </div>
                   <!-- ./skills__item -->
                   <div class="skills__item">
-                    <p class="skills__title">JavaScript</p>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <h4 class="skills__title">JavaScript</h4>
+                    <div class="levelContainer">
+                      <label for="level-js">Level:</label>
+                      <progress id="level-js" max="100" value="70"></progress>
                     </div>
                     <p class="skills__comment">
-                      ES6に準じたプログラミング。<br>
-                      クラスを用いたオブジェクト指向での開発。
+                      実務経験1年以上<br>
+                      jQueryを使った実装のほか、ES6に準じたピュアなJSコーディングも行っています。
                     </p>
                   </div>
                   <!-- ./skills__item -->
@@ -161,41 +160,32 @@
                 <div class="skills__inner">
                   <div class="skills__item">
                     <h4 class="skills__title">Dreamweaver</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-dw">Level:</label>
+                      <progress id="level-dw" max="100" value="50"></progress>
                     </div>
-                    <p class="skills__comment">コーディング、ファイル構成、FTPの操作。
+                    <p class="skills__comment">コーディング、ファイル構成、FTPの操作はできます。実務ではエディタを主に使用しています。
                     </p>
                   </div>
                   <!-- /.skills__item -->
                   <div class="skills__item">
                     <h4 class="skills__title">PhotoShop</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-ps">Level:</label>
+                      <progress id="level-ps" max="100" value="50"></progress>
                     </div>
                     <p class="skills__comment">
-                      リサイズやトリミングなど基本的な操作は可能です。
+                      デザイン確認用として使います。<br>素材の切り出しやサイズ変更を始め、基本的な操作は可能です。
                     </p>
                   </div>
                   <!-- /.skills__item -->
                   <div class="skills__item">
                     <h4 class="skills__title">Illustrator</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-il">Level:</label>
+                      <progress id="level-il" max="100" value="20"></progress>
                     </div>
-                    <p class="skills__comment">パスを使った作画、簡単なロゴ作成。</p>
+                    <p class="skills__comment">デザイン確認用として使います。使用頻度は低めです。</p>
                   </div>
                   <!-- /.skills__item -->
                 </div>
@@ -207,25 +197,19 @@
                 <div class="skills__inner">
                   <div class="skills__item last-row-item">
                     <h4 class="skills__title">OfficeSoft</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-o">Level:</label>
+                      <progress id="level-o" max="100" value="100"></progress>
                     </div>
                     <p class="skills__comment">実務3年以上。
-                      <br>Word / Excel / PPT問題なく使えます。</p>
+                      <br>Word / Excel / PPT問題なく使えます。テクニカル文章も作成経験があります。</p>
                   </div>
                   <!-- /.skills__item -->
                   <div class="skills__item last-row-item">
                     <h4 class="skills__title">C#.NET / VC++</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-c">Level:</label>
+                      <progress id="level-c" max="100" value="50"></progress>
                     </div>
                     <p class="skills__comment">実務2年以上。
                       <br>Windowsアプリケーションの開発経験があります。</p>
@@ -233,12 +217,9 @@
                   <!-- /.skills__item -->
                   <div class="skills__item last-row-item">
                     <h4 class="skills__title">SQL</h4>
-                    <div class="skills__level">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
+                    <div class="levelContainer">
+                      <label for="level-sql">Level:</label>
+                      <progress id="level-sql" max="100" value="50"></progress>
                     </div>
                     <p class="skills__comment">実務1年以上。
                       <br>SQLServer / MySQLの活用実績があります。</p>
@@ -254,204 +235,10 @@
           <div class="wrapper">
             <section id="works-page" class="works content-width pt-lg pb-lg">
               <h2 class="main-title">Works</h2>
-              <h3 class="sub-title">制作事例の一部を紹介します。</h3>
-              <!-- <p style="text-align: center;">紙面媒体でのポートフォリオも作成しております。合わせてご覧いただければ幸いです。</p>
-              <a href="./pdf/portfolio.pdf" target="_blank" style="text-decoration: underline !important;">
-                <p style="text-align: center; margin-bottom: 20px; color: red;">紙のポートフォリオを開く（PDFを開きます。）</p>
-              </a> -->
-              <p style="text-align: center; padding: 40px 0;">
-                実務での実績は都合上、公表しておりません。ご了承ください。<br>
-                主に病院・医学学会の入稿作業・ページ更新を担当しております。
-              </p>
+              <h3 class="sub-title">下記のサイトより制作事例を紹介しています。</h3>
+
               <div class="works__inner">
-                <div class="works__item">
-                  <div class="works__img">
-                    <a target="_blank" href="https://teach49.netlify.app/">
-                      <img src="img/teach49_website.png" alt="">
-                      <span class="works__img-ribbon">Web</span>
-                    </a>
-                  </div>
-                  <!-- ./works__img -->
-                  <div class="works__description">
-                    <details>
-                      <summary>概要</summary>
-                      職業訓練の制作演習で、知人でデザイナーの公式Webサイトを作成しました。
-                      実在するクライアントかつ、実際に公開・運用しているサイトです。
-                    </details>
-                    <details>
-                      <summary>サイト名</summary>
-                      teach49 official website（
-                      <a href="https://teach49.netlify.app/" target="_blank">https://teach49.netlify.app/</a>）
-                    </details>
-                    <details>
-                      <summary>コンセプト</summary>
-                      クリエイターとしてのブランド力と知名度を上げる。グッズ販売サイトへの訪問者数を増やす。
-                    </details>
-                    <details>
-                      <summary>ペルソナ</summary>
-                      20代の男性。オリジナリティあるグッズ集めが趣味。個人制作のグッズを購入することもある。スマホを使って、お気に⼊りのグッズをよく探している。
-                    </details>
-                    <details>
-                      <summary>制作期間</summary>
-                      12日間（依頼者へのヒアリング含む）
-                    </details>
-                    <details>
-                      <summary>感想</summary>
-                      職業訓練の制作演習でしたが、実際のクライアントを探してヒアリングから制作を始めました。<br>
-                      実際に公開・運用しているサイトを制作できてよい経験になりました。
-                    </details>
-                  </div>
-                  <!-- ./works__description -->
-                </div>
-                <!-- ./works__item -->
-                <div class="works__item">
-                  <div class="works__img">
-                    <a target="_blank" href="https://tosefumu-komuten.netlify.app/">
-                      <img src="img/koumuten.png" alt="">
-                      <span class="works__img-ribbon">Web</span>
-                    </a>
-                  </div>
-                  <!-- ./works__img -->
-                  <div class="works__description">
-                    <details>
-                      <summary>概要</summary>
-                      職業訓練の制作課題で工務店（架空）のWebサイトを作成しました。
-                      <br>企画・デザイン・コーディングを経験しました。
-                    </details>
-                    <details>
-                      <summary>サイト名</summary>
-                      戸伏夢工務店（
-                      <a href="https://tosefumu-komuten.netlify.app/" target="_blank">https://tosefumu-komuten.netlify.app/</a>）
-                    </details>
-                    <details>
-                      <summary>コンセプト</summary>
-                      今まで自社のWebサイトはなかったが、自社の信頼・安心を提供するためにWebサイトを作成することにした。
-                    </details>
-                    <details>
-                      <summary>ペルソナ</summary>
-                      40代〜50代の男性。築40年の持ち家のリフォームを考えている。自身も現役で働いているため、情報収集は夜の自宅のPCで検索する。
-                    </details>
-                    <details>
-                      <summary>制作期間</summary>
-                      3日間(企画作成含む)
-                    </details>
-                    <details>
-                      <summary>感想</summary>
-                      企画から考えて制作した初めてのWebサイトです。
-                      <br>短い制作期間でしたが、レスポンシブデザインにも挑戦しました。
-                    </details>
-                  </div>
-                  <!-- ./works__description -->
-                </div>
-                <!-- ./works__item -->
-                <div class="works__item">
-                  <div class="works__img">
-                    <a target="_blank" href="https://gatti-mutti-gym.netlify.app/">
-                      <img src="img/gym.png" alt="">
-                      <span class="works__img-ribbon">Web</span>
-                    </a>
-                  </div>
-                  <!-- ./works__img -->
-                  <div class="works__description">
-                    <details>
-                      <summary>概要</summary>
-                      職業訓練に通う前に独学で学習を始めて、作成した初めてのWebサイトです。
-                    </details>
-                    <details>
-                      <summary>サイト名</summary>
-                      ガッチ・ムッチ・ジム（
-                      <a href="https://gatti-mutti-gym.netlify.app/" target="_blank">https://gatti-mutti-gym.netlify.app/</a>）
-                    </details>
-                    <details>
-                      <summary>コンセプト</summary>
-                      ジム・フィットネスクラブの新規加入者を対象にした、施設紹介を兼ねた運営サイト。
-                    </details>
-                    <details>
-                      <summary>ペルソナ</summary>
-                      20代〜30代の女性。社会人としての生活も安定し始めて、新しい趣味を探している。最近、運動不足を感じておりフィットネスクラブに入会しようか検討している。
-                    </details>
-                    <details>
-                      <summary>制作期間</summary>
-                      14日間
-                    </details>
-                    <details>
-                      <summary>感想</summary>
-                      HTMLを独学で勉強し始め、初めて作成したサイトです。入門書のサンプルで作成したサイトを参考に作成しました。
-                    </details>
-                  </div>
-                  <!-- ./works__description -->
-                </div>
-
-                <!-- ロゴと画像編集はコメントアウト[20/11/23] -->
-
-                <!-- ./works__item -->
-                <!-- <div class="works__item">
-                  <div class="works__img ai">
-                    <img src="img/ai01.jpg" alt="">
-                    <span class="works__img-ribbon">デザイン</span>
-                  </div> -->
-                  <!-- ./works__img -->
-                  <!-- <div class="works__description">
-                    <details>
-                      <summary>概要</summary>
-                      Adobe Illustratorを使ってロゴをデザインしました。
-                    </details>
-                    <details>
-                      <summary>コンセプト</summary>
-                      2021年4月に開校する静岡社会健康医学大学院大学のロゴをデザインする。<br>
-                      <a target="_blank" href="https://compe.japandesign.ne.jp/sshm-u-kousyo-2020/" class="logo-link">【募集ページへ】</a>
-                    </details>
-                    <details>
-                      <summary>ポイント</summary>
-                      各色が学びの分野を表し、それぞれが手を繋ぎ合って社会健康の輪を作るイメージを表現しました。
-                    </details>
-                    <details>
-                      <summary>制作期間</summary>
-                      2日間
-                    </details>
-                    <details>
-                      <summary>感想</summary>
-                      Adobe Illustratorを使って初めてロゴデザインに挑戦しました。
-                      <br>パスやシェイプでの作画に苦労しました。
-                    </details>
-                  </div> -->
-                  <!-- ./works__description -->
-                <!-- </div> -->
-
-
-                <!-- ./works__item -->
-                <!-- <div class="works__item">
-                  <div class="works__img">
-                    <img src="img/ps01.jpg" alt="">
-                    <span class="works__img-ribbon">画像処理</span>
-                  </div> -->
-                  <!-- ./works__img -->
-                  <!-- <div class="works__description">
-                    <details>
-                      <summary>概要</summary>
-                      Adobe PhotoShopを使ってWebサイトのファーストビューを作成しました。
-                    </details>
-                    <details>
-                      <summary>コンセプト</summary>
-                      自身が制作するWebサイトで用いるファーストビューの画像作成。
-                    </details>
-                    <details>
-                      <summary>ポイント</summary>
-                      帽子とTシャツの画像サイズを異なる大きさで表現し、まとまりを持たせつつもインパクトある画像を作成しました。
-                    </details>
-                    <details>
-                      <summary>制作期間</summary>
-                      2日間
-                    </details>
-                    <details>
-                      <summary>感想</summary>
-                      Adobe PhotoShopを使って初めて画像編集に挑戦しました。
-                      <br>切り抜きやレイヤーに苦労しました。
-                    </details>
-                  </div> -->
-                  <!-- ./works__description -->
-                <!-- </div> -->
-                <!-- ./works__item -->
+                <a href="https://coding-works.studio.site/" target="_blank" class="jirei">制作事例サイトへ</a>
               </div>
               <!-- ./works__inner -->
             </section>
